@@ -1,6 +1,5 @@
 # Ansible Tower Dockerfie
 FROM ubuntu:16.04
-LABEL maintainter= Michael Buluma <bulumaknight@gmail.com>
 
 WORKDIR /opt
 
