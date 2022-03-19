@@ -1,5 +1,5 @@
 # Ansible Tower Dockerfie
-FROM ubuntu:16.04
+FROM ubuntu:14.04
 
 WORKDIR /opt
 
@@ -20,10 +20,10 @@ RUN apt-get -qq update \
 			locales \
 			gnupg2 \
 			gnupg \
-			libpython3.7 \
+			libpython2.7 \
 			python3 \
-			python3-pip \
-			python3-dev \
+			python-pip \
+			python-dev \
 			ca-certificates \
 			debconf \
 			apt-transport-https \
