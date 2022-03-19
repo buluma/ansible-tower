@@ -1,5 +1,5 @@
 #!/bin/bash
-# Modified for Ansible Tower 3.x from https://github.com/ybalt/ansible-tower/blob/master/docker-entrypoint.sh
+# Modified for Ansible Tower 3.x from https://github.com/buluma/ansible-tower/blob/master/docker-entrypoint.sh
 
 set -e
 
