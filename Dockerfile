@@ -20,10 +20,10 @@ RUN apt-get -qq update \
 			locales \
 			gnupg2 \
 			gnupg \
-			libpython2.7 \
-			python \
-			python-pip \
-			python-dev \
+			libpython3.7 \
+			python3 \
+			python3-pip \
+			python3-dev \
 			ca-certificates \
 			debconf \
 			apt-transport-https \
