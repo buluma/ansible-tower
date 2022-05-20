@@ -3,14 +3,14 @@ FROM ubuntu:18.04
 
 WORKDIR /opt
 
-ENV ANSIBLE_TOWER_VER 3.2.1
+ENV ANSIBLE_TOWER_VER 3.8.6-1
 ENV PG_DATA /var/lib/postgresql/9.6/main
 ENV AWX_PROJECTS /var/lib/awx/projects
 ENV LC_ALL "en_US.UTF-8"
 ENV LANGUAGE "en_EN:en"
 ENV LANG "en_US.UTF-8"
 ENV DEBIAN_FRONTEND "noninteractive"
-ADD http://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-${ANSIBLE_TOWER_VER}.tar.gz ansible-tower-setup-${ANSIBLE_TOWER_VER}.tar.gz
+ADD https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-${ANSIBLE_TOWER_VER}.tar.gz ansible-tower-setup-${ANSIBLE_TOWER_VER}.tar.gz
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 COPY inventory inventory
 
