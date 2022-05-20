@@ -10,7 +10,7 @@ ENV LC_ALL "en_US.UTF-8"
 ENV LANGUAGE "en_EN:en"
 ENV LANG "en_US.UTF-8"
 ENV DEBIAN_FRONTEND "noninteractive"
-ADD http://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-${ANSIBLE_TOWER_VER}.tar.gz ansible-tower-setup-${ANSIBLE_TOWER_VER}.tar.gz
+ADD https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-${ANSIBLE_TOWER_VER}.tar.gz ansible-tower-setup-${ANSIBLE_TOWER_VER}.tar.gz
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 COPY inventory inventory
 
